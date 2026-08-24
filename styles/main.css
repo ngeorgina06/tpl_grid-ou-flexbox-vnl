@@ -1,9 +1,55 @@
 /* Numéro 1 */
-.menu {
+.nav--main {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.menu-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  gap: 50px;
+}
+
+.nav__brand {
+  color: white;
+  font-size: 2.75rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.liste-menu ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  gap: 20px;
+
+  list-style: none;
 }
+
+.liste-menu li a {
+  color: white;
+}
+
+.liste-menu li a:hover {
+  color: #6aa84f;
+}
+
+.menu-btn .button {
+  margin-left: 50px;
+
+  border: 2px #6aa84f solid;
+
+  padding: 5px 20px;
+}
+
+.menu-btn .button:hover {
+  background-color: white;
+}
+
 /* Numéro 2 */
 
 /* Numéro 3 */
