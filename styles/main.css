@@ -1,5 +1,9 @@
 /* Numéro 1 */
-
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /* Numéro 2 */
 
 /* Numéro 3 */
