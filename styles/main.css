@@ -51,7 +51,95 @@
 }
 
 /* Numéro 2 */
+.cards {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  height: 250px;
+  object-fit: fill;
+}
+
+.card .txt {
+  padding: 20px;
+}
+
+.card h2 {
+  padding-bottom: 20px;
+}
+
+.card p {
+  color: black;
+}
+
+.card span {
+  color: #6aa84f;
+
+  margin-top: auto;
+  padding: 20px;
+}
 
 /* Numéro 3 */
+.cards-monstres {
+  display: grid;
+  gap: 60px;
+  grid-template-columns: repeat(4, 1fr);
+
+  justify-content: center;
+  align-items: center;
+}
+
+.card-monstre {
+  text-align: center;
+}
+
+.card-monstre img {
+  width: 40%;
+}
 
 /* Numéro 4 */
+.cards-sports {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card-sport img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+.contenu-sport {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.contenu-sport:hover {
+  opacity: 1;
+}
+.contenu-sport h2 {
+  color: white;
+  height: 90px;
+  text-shadow: 0px 0px 10px #969696;
+}
