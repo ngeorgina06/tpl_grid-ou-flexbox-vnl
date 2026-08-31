@@ -10,7 +10,7 @@
   justify-content: space-between;
   align-items: baseline;
 
-  gap: 50px;
+  gap: 80px;
 }
 
 .nav__brand {
@@ -39,8 +39,6 @@
 }
 
 .menu-btn .button {
-  margin-left: 50px;
-
   border: 2px #6aa84f solid;
 
   padding: 5px 20px;
@@ -53,7 +51,7 @@
 /* Numéro 2 */
 .cards {
   display: grid;
-  gap: 30px;
+  gap: 20px;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -63,6 +61,10 @@
   display: flex;
   flex-direction: column;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                  if image has space under -- display block                 */
+/* -------------------------------------------------------------------------- */
 
 .card img {
   height: 250px;
@@ -111,6 +113,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+
 .card-sport {
   position: relative;
 }
@@ -123,6 +126,11 @@
   object-fit: fill;
 }
 
+/* -------------------------------------------------------------------------- */
+/* opacity marche pour cacher, mais si élément cliquable, la souris va changer quand dessus.
+solution == display none sur le ctn puis display flex sur le parent. parent:hover .enfant.*/
+/* -------------------------------------------------------------------------- */
+
 .contenu-sport {
   height: 100%;
   width: 100%;
@@ -130,13 +138,13 @@
 
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   opacity: 0;
   transition: 0.5s ease;
 }
@@ -144,8 +152,24 @@
 .contenu-sport:hover {
   opacity: 1;
 }
+
 .contenu-sport h2 {
   color: white;
-  height: 90px;
+  font-size: 90px;
   text-shadow: 0px 0px 10px #969696;
 }
+
+/* -------------------------------------------------------------------------- */
+/*          Pour prochains ex. faire un card__media y card__content           */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                   overflow hidden sur card.media transform scale o translateY-translateX 
+transition transform .03-.07 et transform scale o wtv sur hover == 0                  */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                    effet anim image
+      transform scale 1.2 puis hover sur le card  img transform scale 1
+      transition sur limage pas hover                                         */
+/* -------------------------------------------------------------------------- */
